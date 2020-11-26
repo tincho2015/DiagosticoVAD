@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">expertoEasyRules</string>
+
+    <!-- General -->
+    <string name="btn_revision_aceptar">Aceptar</string>
+    <!-- Menu principal -->
+    <string name="titulo_paciente_menu">Paciente:</string>
+
+    <!-- Pacientes -->
+    <string name="lista_vacia">Sin pacientes</string>
+    <string name="titulo_nombre_paciente">Ingrese el nombre del paciente, por favor</string>
+    <string name="titulo_sexo_paciente">Seleccione el sexo del paciente, por favor</string>
+    <string name="titulo_edad_paciente">Ingrese la edad del paciente, por favor</string>
+    <string name="titulo_layout_listar_pacientes">Pacientes</string>
+    <string name="titulo_nombre">Paciente:</string>
+    <string name="titulo_edad">Edad:</string>
+    <string name="titulo_sexo">Sexo:</string>
+    <string name="titulo_hc">Número de HC:</string>
+
+    <!-- Resultados de P.C-->
+    <string name="titulo_clase_mallanpati"> Clase de Mallampati:</string>
+    <string name="titulo_apertura_bucal"> Grado de apertura bucal:</string>
+    <string name="titulo_clase_dtm"> Clase de DTM:</string>
+    <string name="titulo_rango_movilidad_cabeza_cuello">Rango de movilidad en cabeza y cuello:</string>
+    <string name="titulo_clase_subluxacion_mandibular">Clase de subluxación mandibular:</string>
+    <string name="resultado_vacio">Aún no se determino un resultado</string>
+
+    <!-- Revision obstruccion via aerea-->
+    <string name="titulo_presencia_disnea">Presencia de disnea:</string>
+    <string name="titulo_presencia_disfagia">Presencia de disfagia:</string>
+    <string name="titulo_presencia_disfonia">Presencia de disfonia:</string>
+    <string name="titulo_presencia_estridor">Presencia de estridor:</string>
+
+
+    <!-- Revision criterios ventilacion dificil-->
+    <string name="titulo_presencia_obesidad">Presencia de obesidad:</string>
+    <string name="titulo_presencia_barba">Presencia de barba:</string>
+    <string name="titulo_presencia_mayoria_edad">Mayor de 55 años:</string>
+    <string name="titulo_presencia_roncador">Historial de ronquidos:</string>
+    <string name="titulo_presencia_edentacion">Presencia de edentación:</string>
+
+    <!-- Revision patologias y factores -->
+    <string name="titulo_presencia_lesion_va">Presencia de lesiones en la vía aérea y mediastino anterior:</string>
+    <string name="titulo_presencia_macroglosia">Presencia de macroglosia:</string>
+    <string name="titulo_presencia_lesion_raquis_cervical">Presencia de lesiones en la raquis cervical:</string>
+    <string name="titulo_presencia_lesion_mandibular">Presencia de lesiones mandibulares:</string>
+    <string name="titulo_presencia_hipertrofia_amigdalar">Presencia de hipertrofia amigdalar lingual:</string>
+    <string name="titulo_presencia_angina_ludwig">Presencia de angina de Ludwig:</string>
+    <string name="titulo_presencia_masas_tiroideas">Presencia de masas o protuberancias en la tiroides:</string>
+    <string name="titulo_presencia_historial_vad">Presencia de antecedentes de vía aérea difícil:</string>
+    <string name="titulo_presencia_radiodermitis_cervical">Presencia de radiodermitis cervical:</string>
+
+    <!-- Criterios de ventilación dificil -->
+
+    <string name="titulo_presenta_barba">¿Presenta barba?</string>
+    <string name="titulo_presenta_obesidad">¿Presenta obesidad?</string>
+    <string name="titulo_historia_roncador">¿Presenta una historia de roncador/SAOS?</string>
+    <string name="titulo_edentacion">¿Presenta falta de dientes?</string>
+    <string name="titulo_mayor_edad">¿Es mayor a 55 años?</string>
+    <string name="titulo_mayoria_edad">Mayoria de edad del paciente:</string>
+    <string name="opcion_radio_button_si">SI</string>
+    <string name="opcion_radio_button_no">NO</string>
+    <string name="boton_criterio_ventilacion">Finalizar</string>
+
+    <!-- Patologias asociadas -->
+    <string name="titulo_presenta_lesiones_via_aerea">¿Presenta alguna lesión sobre el cuello y el mediastino?</string>
+    <string name="titulo_presenta_masas_tiroideas">¿Presenta masas tiroideas?</string>
+    <string name="titulo_presenta_radiodermitis_cervical">¿Presenta alguna lesión macroscópica en el cuello y/o Tórax?</string>
+    <string name="boton_patologia_asociada">Siguiente</string>
+    <string name="titulo_presenta_lesion_raquis_cervical">¿Presenta alguna lesión sobre el raquis cervical?</string>
+    <string name="titulo_presenta_macroglosia">¿Presenta macroglosia?</string>
+    <string name="titulo_presenta_lesion_mandibulares">¿Presenta alguna lesión mandibular?</string>
+    <string name="titulo_presenta_hipertrofia_amigdalar">¿Presenta hipertrofia amigdalar lingual? </string>
+    <string name="titulo_presenta_antecedente_vad">¿Presenta antecedentes de vía aérea difícil?</string>
+    <string name="titulo_presenta_angina_ludwig">¿Presenta angina de Ludwig/absceso en cavidad oral?</string>
+    <string name="boton_patologia_asociada_continuacion">Finalizar</string>
+
+
+    <!-- Sintomas obstrucción -->
+    <string name="titulo_sintoma_obstruccion_disnea">¿Presenta disnea?</string>
+    <string name="titulo_sintoma_obstruccion_disfagia">¿Presenta disfagia?</string>
+    <string name="titulo_sintoma_obstruccion_disfonia">¿Presenta disfonia?</string>
+    <string name="titulo_sintoma_obstruccion_estridor">¿Presenta estridor?</string>
+    <string name="titulo_sintoma_obstruccion_antecedente">¿Presenta antecedentes de obstrucción de vía aérea?</string>
+    <string name="boton_sintoma_obstruccion">Finalizar</string>
+
+    <!-- Pruebas clinicas-->
+    <string name="titulo_prueba_clinica_uvula">¿Se puede visualizar la úvula?</string>
+    <string name="titulo_prueba_clinica_garganta">¿Se puede visualizar la garganta?</string>
+    <string name="titulo_prueba_clinica_pilares_amigdalinos">¿Se pueden visualizar los pilares amigdalinos?</string>
+    <string name="titulo_paladar">¿Se puede visualizar el paladar blando?</string>
+    <string name="titulo_pared_faringea_posterio">¿Puede visualizar la pared faringea posterior?</string>
+    <string name="titulo_distancia_interincisiva">Indique la distancia interincisiva, por favor</string>
+    <string name="titulo_nivel_luxacion_mandibular">Indique el nivel de subluxación mandibular, por favor</string>
+    <string name="titulo_espacio_laringeo_anterior">Indique la distancia tiromentoniana, por favor</string>
+    <string name="titulo_movilidad_cabeza_cuello">Indique el grado de movilidad de la cabeza y el cuello, por favor</string>
+    <string name="opcion_uvula_completa">Completa</string>
+    <string name="opcion_uvula_base">Base</string>
+    <string name="opcion_luxacion_mandibular_1">Mayor a 0</string>
+    <string name="opcion_luxacion_mandibular_2">Menor a 0</string>
+    <string name="opcion_luxacion_mandibular_3">Igual a 0</string>
+    <string name="boton_prueba_clinica">Finalizar</string>
+
+
+    <!-- Diagnostico final -->
+    <string name="titulo_diagnostico_final_historia_intubacion_dificil">Historia de intubación difícil:</string>
+    <string name="titulo_diagnostico_final_patologia_asociada_intubacion_dificil">Patología asociada a una intubación difícil:</string>
+    <string name="titulo_diagnostico_final_sintoma_obstruccion">Sintomas de obstrucción de la vía aérea:</string>
+    <string name="titulo_diagnostico_final_criterios_ventilacion_dificil">Cantidad de criterios de ventilación difícil:</string>
+    <string name="titulo_diagnostico_final_apertura_oral">Resultado de prueba de apertura oral:</string>
+    <string name="titulo_diagnostico_final_subluxacion_mandibular">Resultado de prueba de subluxación mandibular:</string>
+    <string name="titulo_diagnostico_final_dtm">Resultado de prueba de DTM:</string>
+    <string name="titulo_diagnostico_final_mov_cabeza">Resultado de prueba de movilidad de cabeza y cuello:</string>
+    <string name="titulo_diagnostico_final_mallampati">Resultado de prueba de Mallampati:</string>
+    <string name="titulo_diagnostico_final_paciente">Nombre del paciente:</string>
+    <string name="titulo_diagnostico_final_resultado">Resultado final:</string>
+    <string name="titulo_boton_finalizar_diagnostico">Finalizar</string>
+
+
+</resources>

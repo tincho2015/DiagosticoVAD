@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            tools:context=".activities.patologia_asociada"
+            tools:layout_conversion_absoluteHeight="604dp"
+            tools:layout_conversion_absoluteWidth="411dp">
+
+
+            <TextView
+                android:id="@+id/txtViewHipertrofia2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="199dp"
+                android:text="@string/titulo_presenta_hipertrofia_amigdalar"
+                android:textColor="@color/secondaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgLesionMandibular" />
+
+            <TextView
+                android:id="@+id/txtViewAnginaLudwig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="228dp"
+                android:text="@string/titulo_presenta_angina_ludwig"
+                android:textColor="@color/secondaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgMacroglosias"
+                tools:layout_conversion_absoluteHeight="17dp"
+                tools:layout_conversion_absoluteWidth="180dp" />
+
+
+            <TextView
+                android:id="@+id/txtViewRadiodermitisCervical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="193dp"
+                android:text="@string/titulo_presenta_radiodermitis_cervical"
+                android:textColor="@color/secondaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgMasas"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_conversion_absoluteWidth="206dp" />
+
+            <TextView
+                android:id="@+id/txtViewLesionVA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/titulo_presenta_lesiones_via_aerea"
+                android:textAlignment="textStart"
+                android:textColor="@color/secondaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="33dp"
+                tools:layout_conversion_absoluteWidth="378dp" />
+
+            <TextView
+                android:id="@+id/txtViewLesionRaquisCervical2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="99dp"
+                android:text="@string/titulo_presenta_lesion_raquis_cervical"
+                android:textColor="@color/secondaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgLesionCuelloTorax"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_conversion_absoluteWidth="300dp" />
+
+            <TextView
+                android:id="@+id/txtViewMacroglosias4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="250dp"
+                android:text="@string/titulo_presenta_macroglosia"
+                android:textColor="@color/secondaryText"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/rgMacroglosias"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgLesionRaquisCervical"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_conversion_absoluteWidth="149dp" />
+
+            <RadioGroup
+                android:id="@+id/rgLesionRaquisCervical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/txtViewMacroglosias4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewLesionRaquisCervical2">
+
+                <RadioButton
+                    android:id="@+id/rbLesionCervicalSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_si"
+                    android:textColor="@color/primaryText" />
+
+                <RadioButton
+                    android:id="@+id/rbLesionCervicalNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_no"
+                    android:textColor="@color/primaryText" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtViewMasasTiroideas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="227dp"
+                android:text="@string/titulo_presenta_masas_tiroideas"
+                android:textColor="@color/secondaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgLesionVA"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_conversion_absoluteWidth="172dp" />
+
+            <RadioGroup
+                android:id="@+id/rgLesionVA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="303dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewLesionVA">
+
+                <RadioButton
+                    android:id="@+id/rbLesionSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_si"
+                    android:textColor="@color/primaryText"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbLesionNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_no"
+                    android:textColor="@color/primaryText"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rgLesionCuelloTorax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewRadiodermitisCervical">
+
+                <RadioButton
+                    android:id="@+id/rbLesionCuelloToraxSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_si"
+                    android:textColor="@color/primaryText"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbLesionCuelloToraxNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_no"
+                    android:textColor="@color/primaryText"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rgMacroglosias"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="303dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewMacroglosias4">
+
+                <RadioButton
+                    android:id="@+id/rbMacroglosiasSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_si"
+                    android:textColor="@color/primaryText" />
+
+                <RadioButton
+                    android:id="@+id/rbMacroglosiasNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_no"
+                    android:textColor="@color/primaryText" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rgAnginaLudwig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="303dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewAnginaLudwig">
+
+                <RadioButton
+                    android:id="@+id/rbAnginaLudwigSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_si"
+                    android:textColor="@color/primaryText" />
+
+                <RadioButton
+                    android:id="@+id/rbAnginaLudwigNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_no"
+                    android:textColor="@color/primaryText" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtViewLesionMandibular2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="173dp"
+                android:text="@string/titulo_presenta_lesion_mandibulares"
+                android:textColor="@color/secondaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgAnginaLudwig" />
+
+            <RadioGroup
+                android:id="@+id/rgLesionMandibular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="303dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/txtViewHipertrofia2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewLesionMandibular2">
+
+                <RadioButton
+                    android:id="@+id/rbLesionMandibularSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_si"
+                    android:textColor="@color/primaryText" />
+
+                <RadioButton
+                    android:id="@+id/rbLesionMandibularNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_no"
+                    android:textColor="@color/primaryText" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rgHipertrofia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewHipertrofia2">
+
+                <RadioButton
+                    android:id="@+id/rbHipertrofiaSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_si"
+                    android:textColor="@color/primaryText" />
+
+                <RadioButton
+                    android:id="@+id/rbHipertrofiaNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_no"
+                    android:textColor="@color/primaryText" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rgAntecedenteVad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="303dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewAntecedenteVad2">
+
+                <RadioButton
+                    android:id="@+id/rbAntecedenteVadSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_si"
+                    android:textColor="@color/primaryText" />
+
+                <RadioButton
+                    android:id="@+id/rbAntecedenteVaNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_no"
+                    android:textColor="@color/primaryText" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtViewAntecedenteVad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="126dp"
+                android:text="@string/titulo_presenta_antecedente_vad"
+                android:textColor="@color/secondaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgHipertrofia" />
+
+            <RadioGroup
+                android:id="@+id/rgMasas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="303dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewMasasTiroideas">
+
+                <RadioButton
+                    android:id="@+id/rbMasasSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_si"
+                    android:textColor="@color/primaryText" />
+
+                <RadioButton
+                    android:id="@+id/rbMasasNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opcion_radio_button_no"
+                    android:textColor="@color/primaryText" />
+            </RadioGroup>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/boton_patologia_asociada_continuacion"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

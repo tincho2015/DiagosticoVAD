@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.martin.expertoeasyrules">
+
+    <application
+        android:name=".app.miAplicacion"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.listar_pacientes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.diagnostico_final"/>
+        <activity
+            android:name=".activities.prueba_predictores"
+            android:parentActivityName=".activities.menu_principal" />
+        <activity
+            android:name=".activities.sintoma_obstruccion"
+            android:parentActivityName=".activities.menu_principal" />
+        <activity
+            android:name=".activities.patologia_asociada"
+            android:parentActivityName=".activities.menu_principal" />
+        <activity
+            android:name=".activities.criterio_ventilacion_dificil"
+            android:parentActivityName=".activities.menu_principal" />
+        <activity
+            android:name=".activities.resultado_predictores"/>
+        <activity
+            android:name=".activities.menu_principal"
+            android:parentActivityName=".activities.listar_pacientes" />
+        <activity
+            android:name=".activities.ingresar_paciente"
+            android:parentActivityName=".activities.listar_pacientes" />
+    </application>
+
+</manifest>
